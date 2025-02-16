@@ -17,6 +17,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- google font Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,10 +49,14 @@
     <header class="max-w-[1280px] mx-auto">
       <!-- navbar section -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 sm:p-5">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost pl-0 lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -79,7 +84,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="manrope font-extrabold text-4xl"
+            <a class="manrope font-extrabold sm:text-2xl lg:text-4xl"
               >Hockey<span class="text-btn-primary-color">'</span>s</a
             >
           </div>
@@ -116,9 +121,215 @@
           </div>
         </div>
       </nav>
+      <!-- slider section -->
+      <section class="lg:my-12">
+        <div class="carousel w-full lg:h-[550px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="B9A3-Hockeys-main/Images/1.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="B9A3-Hockeys-main/Images/2.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="B9A3-Hockeys-main/Images/3.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="B9A3-Hockeys-main/Images/4.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
+    <!-- main section -->
 
-    <main></main>
+    <main class="max-w-[1280px] mx-auto">
+      <section class="lg:my-12 p-5">
+        <div class="py-8 text-center border-y-2 border-dashed space-y-6">
+          <h3
+            class="lg:text-4xl md:text-3xl sm:text-2xl font-extrabold manrope"
+          >
+            Professional Hockeys Club
+          </h3>
+          <p class="manrope">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <!-- progress section -->
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-12"
+        >
+          <!-- progress 1 -->
+          <div class="text-center space-y-6">
+            <div
+              class="radial-progress text-[#FF4240]"
+              style="--value: 87"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h4 class="manrop font-semibold">Prayer Facility</h4>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <!-- progress 2 -->
+          <div class="text-center space-y-6">
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 95"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h4 class="manrop font-semibold">Senior Player</h4>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <!-- progress 3 -->
+          <div class="text-center space-y-6">
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h4 class="manrop font-semibold">Training Ground</h4>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <!-- progress 4 -->
+          <div class="text-center space-y-6">
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h4 class="manrop font-semibold">Senior Player</h4>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+      </section>
+      <!-- Program Sections -->
+      <section class="lg:p-0 p-5">
+        <div class="py-8 text-center border-y-2 border-dashed space-y-6">
+          <h3
+            class="lg:text-4xl md:text-3xl sm:text-2xl font-extrabold manrope"
+          >
+            Program Sections
+          </h3>
+          <p class="manrope">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <!-- card section -->
+        <div class="grid lg:grid-cols-2 gap-6 grid-cols-1 lg:mt-12 mt-6">
+          <!-- card 1 -->
+          <div
+            class="card bg-[#13131880] image-full w-full shadow-xl lg:relative"
+          >
+            <figure>
+              <img src="B9A3-Hockeys-main/Images/2.png" alt="" class="w-full" />
+            </figure>
+
+            <div
+              class="lg:p-10 p-6 z-20 items-end lg:space-y-6 space-y-5 lg:absolute lg:bottom-0"
+            >
+              <h2 class="manrope text-white font-extrabold lg:text-3xl text-xl">
+                Junior Program
+              </h2>
+              <p class="manrope text-white lg:text-base text-sm">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <div class="">
+                <button class="btn bg-btn-primary-color text-white border-none">
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-base-100 image-full w-full shadow-xl lg:relative">
+            <figure>
+              <img src="B9A3-Hockeys-main/Images/3.png" alt="" class="w-full" />
+            </figure>
+            <div
+              class="lg:p-10 p-5 z-20 items-end space-y-6 lg:absolute lg:bottom-0"
+            >
+              <h2 class="manrope text-white font-extrabold lg:text-3xl text-xl">
+                Teenager Program
+              </h2>
+              <p class="manrope text-white lg:text-base text-sm">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                elit enim sagittis turpis in magna. Id et sed euismod natoque
+                amet nunc morbi nulla. Tortor congue sed et in.
+              </p>
+              <div class="">
+                <button class="btn bg-btn-primary-color text-white border-none">
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="card bg-base-100 image-full w-full shadow-xl mt-6 lg:relative"
+        >
+          <figure>
+            <img
+              src="B9A3-Hockeys-main/Images/4.png"
+              alt=""
+              class="w-full h-[450px]"
+            />
+          </figure>
+          <div
+            class="lg:p-10 p-5 z-20 items-end space-y-6 lg:absolute lg:bottom-0"
+          >
+            <h2 class="manrope text-white font-extrabold lg:text-3xl text-xl">
+              Professional Program
+            </h2>
+            <p class="manrope text-white lg:text-base text-sm">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+              <br />
+              elit enim sagittis turpis in magna. Id et sed euismod natoque amet
+              nunc <br />
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <div class="">
+              <button class="btn bg-btn-primary-color text-white border-none">
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
